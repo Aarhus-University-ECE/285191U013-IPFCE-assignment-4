@@ -1,4 +1,4 @@
-/*
+/* Excercise 4
 * pre:  a contains numbers between 1..20
 * post: count[i] is equal to the numers af i+1 in a
 */
