@@ -1,5 +1,4 @@
-#define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
-#include "catch.hpp"
+#include <catch2/catch_test_macros.hpp>
 
 extern "C"
 {
@@ -29,7 +28,7 @@ TEST_CASE("average")
 }
 
 TEST_CASE("counter")
-{   
+{
     int v = 1;
     int a[100][150] = { {1,1} };
     for (int i = 0; i < 100; i++) {

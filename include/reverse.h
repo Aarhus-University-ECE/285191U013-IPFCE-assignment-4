@@ -1,6 +1,6 @@
-#ifndef REVERSE
-#define REVERSE
+#ifndef _REVERSE_H_
+#define _REVERSE_H_
 
-void reverse( int list[], int rev_array[], int n);
+void reverse(int list[], int rev_array[], int n);
 
-#endif // REVERSE
+#endif // _REVERSE_H_

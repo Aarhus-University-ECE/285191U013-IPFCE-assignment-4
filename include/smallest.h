@@ -1,6 +1,6 @@
-#ifndef GET_MIN
-#define GET_MIN
+#ifndef _SMALLEST_H_
+#define _SMALLEST_H_
 
-int get_min( int list[], int n);
+int get_min(int list[], int n);
 
-#endif // GET_MIN
+#endif // _SMALLEST_H_

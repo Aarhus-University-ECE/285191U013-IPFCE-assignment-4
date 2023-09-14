@@ -1,6 +1,6 @@
-#ifndef LONGEST_SEQ
-#define LONGEST_SEQ
+#ifndef _LONGEST_SEQ_H_
+#define _LONGEST_SEQ_H_
 
 int longest_seq(int list[], int n);
 
-#endif // LONGEST_SEQ
+#endif // _LONGEST_SEQ_H_
