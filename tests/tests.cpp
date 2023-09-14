@@ -1,4 +1,5 @@
 #include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_floating_point.hpp>
 
 extern "C"
 {
@@ -24,7 +25,7 @@ TEST_CASE("average")
 {
     int list[10] = {1,2,3,4,5,6,7,8,-4,0};
     int n = average(list,10);
-    REQUIRE_THAT(n, Catch::Matchers::WithinAbs(3.2, 0.000001));
+    REQUIRE_THAT(n, Catch::Matchers::WithinAbs(3.2, 1e-5));
 }
 
 TEST_CASE("counter")
