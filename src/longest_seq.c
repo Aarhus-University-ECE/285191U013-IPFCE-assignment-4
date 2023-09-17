@@ -1,5 +1,7 @@
 #include "longest_seq.h"
 
+#include <stdio.h>
+#include <stdlib.h>
 #include <assert.h>
 
 /// Excercise 3
@@ -11,3 +13,11 @@ int longest_seq(int list[], int n) {
 
   return 0;
 }
+
+int main() {
+
+  printf("Hellope!\n");
+
+  return 0;
+}
+

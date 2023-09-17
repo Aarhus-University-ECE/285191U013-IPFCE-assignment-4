@@ -1,5 +1,7 @@
 #include "average.h"
 
+#include <stdio.h>
+#include <stdlib.h>
 #include <assert.h>
 /// Excercise 6
 /// Returns the average of an array
@@ -9,4 +11,11 @@ double average(int list[], int n) {
   assert(n > 0);
   //...
   return avg;
+}
+
+int main() {
+
+  printf("Hellope!\n");
+
+  return 0;
 }
