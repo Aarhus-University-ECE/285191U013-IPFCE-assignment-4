@@ -1,30 +1,21 @@
-Pre-requisits: 
-- Visual Studio and Visual Studio Code (VSC)
-- CMake 
-- ..
+# Week 4: Array data structures
 
-Within VSC press ctrl+shit+p to open command prompt. Type
-```bash
-cmake configure 
-```
-This will configure your build directory. Usually required one-time only.
+---
 
-Then use 
-```bash
-cmake build
-```
-to build the files. When you made changes you need to "re-build" to include the changes.
+See `Assignment_Week04.pdf` for this weeks assignment.
 
-Afterwards to run tests type 
-```bash
-ctest
-```
+## NOTE! regarding the first exercise loanRepayment.c
 
-Submit your solutions via the assignment on brightspace, Week 3. Please make
-sure to submit your solutions by next Monday. If an exercise requires you to write C
-code, then create a new C file (i.e. do not combine exercises into a single C file).  
-
+This file includes `#include <math.h>` which is a library that needs to be linked to the compiler. This is done by adding `-lm` to the command line. 
 
 ```sh
 gcc ./src/loanRepayment.c -lm -o loanRepayment
+```
+
+This means that the code runner plugin in VSCode will not work for this exercise. You need to run the code from the command line. Or modify the code runner plugin to include the `-lm` flag. (Ask one of the teachers if you need help with this.)
+
+## Run tests
+
+```sh
+make test
 ```
