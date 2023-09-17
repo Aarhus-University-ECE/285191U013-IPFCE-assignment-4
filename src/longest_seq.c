@@ -1,8 +1,10 @@
+#ifdef TEST
 #include "longest_seq.h"
+#endif
 
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 
 /// Excercise 3
 /// Returns the index in list of the logest sequence of zeros in list, -1 if no
@@ -14,6 +16,8 @@ int longest_seq(int list[], int n) {
   return 0;
 }
 
+#ifndef TEST
+
 int main() {
 
   printf("Hellope!\n");
@@ -21,3 +25,4 @@ int main() {
   return 0;
 }
 
+#endif

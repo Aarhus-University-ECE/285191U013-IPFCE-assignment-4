@@ -1,4 +1,6 @@
-// #include "counter.h"
+#ifdef TEST
+#include "counter.h"
+#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,9 +14,14 @@ void count_1_to_20(int a[100][150], int count[20]) {
 }
 
 
+#ifndef TEST
+
 int main() {
 
   printf("Hellope!\n");
+  
 
   return 0;
 }
+
+#endif

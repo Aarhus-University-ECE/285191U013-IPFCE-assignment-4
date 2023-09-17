@@ -1,4 +1,6 @@
+#ifdef TEST
 #include "reverse.h"
+#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,9 +13,13 @@ void reverse(int list[], int rev_array[], int n) {
   //...
 }
 
+#ifndef TEST
+
 int main() {
 
   printf("Hellope!\n");
 
   return 0;
 }
+
+#endif

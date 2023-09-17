@@ -23,17 +23,21 @@ include_directories(include)
 add_executable(loanRepayment src/loanRepayment.c)
 target_link_libraries(loanRepayment m)
 
+
+set (libs average counter longest_seq reverse get_min)
+
 add_library(average STATIC src/average.c)
 add_library(counter STATIC src/counter.c)
 add_library(longest_seq STATIC src/longest_seq.c)
 add_library(reverse STATIC src/reverse.c)
-add_library(smallest STATIC src/smallest.c)
+add_library(get_min STATIC src/get_min.c)
 
-
-add_executable(playground src/playground.c)
-target_link_libraries(playground average counter longest_seq reverse smallest m)
-
+foreach(lib ${libs})
+	# target_link_libraries(${lib} m)
+	target_compile_definitions(${lib} PRIVATE -DTEST)
+endforeach()
 
 add_executable(unit-tests tests/tests.cpp)
-target_link_libraries(unit-tests average counter longest_seq reverse smallest)
+target_link_libraries(unit-tests average counter longest_seq reverse get_min)
 target_link_libraries(unit-tests Catch2::Catch2WithMain)
+target_compile_definitions(unit-tests PRIVATE -DTEST)

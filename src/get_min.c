@@ -14,9 +14,13 @@ int get_min(int list[], int n) {
 }
 
 
+#ifndef TEST
+
 int main() {
 
   printf("Hellope!\n");
 
   return 0;
 }
+
+#endif
