@@ -23,6 +23,14 @@ int longest_seq(int list[], int n) {
 #ifndef TEST
 
 int main() {
+  int a[13] = {0, 0, 0, 4, 5, 0, 0, 0, 0, 0, 11, 0, 0};
+  int b[5] = {1, 2, 3, 4, 5};
+
+  printf("The longest sequence of zeros start index is %d\n",
+         longest_seq(a, 13));
+
+  printf("The longest sequence of zeros start index is %d\n",
+         longest_seq(b, 5));
 
   printf("Hellope!\n");
 
