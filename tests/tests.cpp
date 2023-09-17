@@ -77,7 +77,7 @@ TEST_CASE("reverse") {
   REQUIRE(b == c);
 }
 
-TEST_CASE("smallest") {
+TEST_CASE("get_min") {
   {
   int list[5] = {1, 2, 3, 4, 5};
   int n = 5;

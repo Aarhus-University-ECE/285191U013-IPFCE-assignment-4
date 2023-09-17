@@ -1,3 +1,5 @@
+// This #ifdef block is something that we have added so we can test your
+// code. Please ignore it.
 #ifdef TEST
 #include "average.h"
 #endif
@@ -11,10 +13,12 @@
 double average(int list[], int n) {
   double avg = 0;
   assert(n > 0);
-
+  // insert your code here
   return avg;
 }
 
+// This #ifdef block is something that we have added so we can test your
+// code. Please ignore it.
 #ifndef TEST
 
 int main() {

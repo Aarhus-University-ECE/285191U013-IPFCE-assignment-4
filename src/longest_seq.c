@@ -1,3 +1,5 @@
+// This #ifdef block is something that we have added so we can test your
+// code. Please ignore it.
 #ifdef TEST
 #include "longest_seq.h"
 #endif
@@ -11,11 +13,13 @@
 /// zeros in list pre: n>0
 int longest_seq(int list[], int n) {
   assert(n > 0);
-  // ...
+  // insert your code here
 
   return 0;
 }
 
+// This #ifdef block is something that we have added so we can test your
+// code. Please ignore it.
 #ifndef TEST
 
 int main() {
